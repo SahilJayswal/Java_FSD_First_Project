@@ -9,8 +9,8 @@ public class LockedMe {
 										"\n******************** SAHIL JAYSWAL ********************";	
 		System.out.println(Welcome_Message);
 		
-//		LockedMeOption option = new LockedMeOption();
-//		
+		LockedMeOption option = new LockedMeOption();
+		option.PrimaryOption();
 		
 	
 	}
