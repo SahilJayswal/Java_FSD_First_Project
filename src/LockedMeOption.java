@@ -142,7 +142,7 @@ public class LockedMeOption {
     	}
     	System.out.println("Delete failed file not found");
     }
-    //Search File3
+    //Search File
     void SearchFile(String filename) {
     	String[] list = folder_name.list();
     	for(String str:list) {
