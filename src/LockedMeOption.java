@@ -11,22 +11,23 @@ public class LockedMeOption {
 	
 	//Primary Option for user
 	private static final String Primary_Option =
-            "\nSelect any of the following: \n"+
-                    "1 -> List files in directory\n"+
-                    "2 -> Add, Delete or Search\n"+
-                    "3 -> Exit Program";
+            "\nSelect option from following: \n"+
+                    "Choose 1 => To Show files name in directory in ascending order\n"+
+                    "Choose 2 => To Add, Delete or Search file\n"+
+                    "Choose 3 => To Exit Program";
 
-	//Secondry Option for user
+	//Secondary Option for user
     private static final String Secondary_Option =
-            "   \nSelect any of the following: \n"+
-                    "   1 -> Add a file\n"+
-                    "   2 -> Delete a file\n"+
-                    "   3 -> Search a file\n"+
-                    "   4 -> GoBack";
+            "   \nSelect option from following: \n"+
+                    "Choose 1 => To Add a file\n"+
+                    "Choose 2 => To Delete a file\n"+
+                    "Choose 3 => To Search a file\n"+
+                    "Choose 4 => To GoBack";
     
     //Primary Option UserInput and Operations
     void PrimaryOption() {
     	System.out.println(Primary_Option);
+    	System.out.print("Please enter your choise: ");
     	@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
     	int PriInput = sc.nextInt();
@@ -55,6 +56,7 @@ public class LockedMeOption {
     //Secondary Option UserInput and Operation
     void SecondaryOption() {
     	System.out.println(Secondary_Option);
+    	System.out.print("Please enter your choise: ");
     	try {
     	@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
