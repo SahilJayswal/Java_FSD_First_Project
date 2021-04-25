@@ -26,7 +26,7 @@ public class LockedMeOption {
     //Primary Option UserInput and Operations
     void PrimaryOption() {
     	System.out.println(Primary_Option);
-    	System.out.print("Please enter your choise: ");
+    	System.out.print("Please enter your option: ");
     	@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
     	int PriInput = sc.nextInt();
@@ -55,26 +55,26 @@ public class LockedMeOption {
     //Secondary Option UserInput and Operation
     void SecondaryOption() {
     	System.out.println(Secondary_Option);
-    	System.out.print("Please enter your choise: ");
+    	System.out.print("Please enter your option: ");
     	try {
     	@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
     	int SecInput = sc.nextInt();
     	switch(SecInput) {
     	case 1:
-    		System.out.println("Please enter file name to Add: ");
+    		System.out.print("Please enter file name to add: ");
     		String filename = sc.next();
     		AddFile(filename);
     		break;
     		
     	case 2:
-    		System.out.println("Please enter file name to delete: ");
+    		System.out.print("Please enter file name to delete: ");
     	    filename = sc.next();
     	    DeleteFile(filename);
     		break;
     		
     	case 3:
-    		System.out.println("Please enter file name to search: ");
+    		System.out.print("Please enter file name to search: ");
     		filename = sc.next();
     		SearchFile(filename);
     		break;
@@ -88,7 +88,7 @@ public class LockedMeOption {
     		System.out.println("Please enter 1, 2, 3 or 4");
     		SecondaryOption();
     	}
-    	//Call secondary options
+    	
     	SecondaryOption();
     	}
     	
@@ -98,7 +98,7 @@ public class LockedMeOption {
     	}
     }
     
-    //List files Operation
+    //List files in ascending order
     void ListFile() {
     	String[] list;
     	File f = new File(Directory);
@@ -143,7 +143,7 @@ public class LockedMeOption {
     	}
     	System.out.println("Delete failed file not found");
     }
-    //Search File
+    //Search File enter by user
     void SearchFile(String filename) {
     	String[] list = folder_name.list();
     	for(String str:list) {
