@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class LockedMeOption {
 	
-	//Fetching directory properties
 	String Directory = System.getProperty("user.dir");
 	File folder_name = new File(Directory);
 	
